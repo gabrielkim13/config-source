@@ -1,0 +1,23 @@
+[package]
+name = "config-source"
+version = "0.1.0"
+description = "Macro for deriving config::Source (config-rs) trait"
+homepage = "https://github.com/gabrielkim13/config-source"
+repository = "https://github.com/gabrielkim13/config-source"
+readme = "README.md"
+keywords = ["config", "configuration", "settings"]
+authors = ["Gabriel Kim <gabrielkim13@gmail.com>"]
+categories = ["config"]
+license = "MIT"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+config = "0.13"
+quote = "1"
+syn = "1"
+
+[dev-dependencies]
+serde = "1"
