@@ -1,6 +1,6 @@
 [package]
 name = "config-source"
-version = "0.1.0"
+version = "0.1.1"
 description = "Macro for deriving config::Source (config-rs) trait"
 homepage = "https://github.com/gabrielkim13/config-source"
 repository = "https://github.com/gabrielkim13/config-source"
@@ -15,9 +15,10 @@ edition = "2021"
 proc-macro = true
 
 [dependencies]
-config = "0.13"
+darling = "0.14"
 quote = "1"
 syn = "1"
 
 [dev-dependencies]
+config = "0.13"
 serde = "1"

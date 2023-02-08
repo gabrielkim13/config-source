@@ -56,8 +56,8 @@ mod config;
 
 use proc_macro::TokenStream;
 
-/// Derive `config::Source` for a struct.
+/// Derives `config::Source` for a struct.
 #[proc_macro_derive(ConfigSource)]
 pub fn config_source(input: TokenStream) -> TokenStream {
-    config::config_source(input)
+    config::derive(input)
 }
